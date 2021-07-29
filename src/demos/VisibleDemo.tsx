@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useVisible } from "../../hooks/useVisible";
+import { useVisible } from "../hooks/useVisible";
 import { Drawer, Button } from "antd";
 
 export const VisibleDemo = () => {
