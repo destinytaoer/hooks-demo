@@ -14,6 +14,8 @@ export const ClosureDemo = () => {
 
   return (
     <>
+      <h2>ClosureDemo</h2>
+      <p>count: {count}</p>
       <Button onClick={() => setCount((count) => count + 1)}>+1</Button>
     </>
   );

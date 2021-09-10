@@ -11,6 +11,7 @@ export const VisibleDemo = () => {
 
   return (
     <>
+      <h2>VisibleDemo</h2>
       <Button onClick={show}>点击展示抽屉</Button>
       <Drawer visible={visible} onClose={hide}></Drawer>
     </>

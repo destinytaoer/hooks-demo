@@ -51,9 +51,8 @@ export const AsyncDemo = () => {
 
   return (
     <>
-      <Button onClick={fetchData} loading={loading}>
-        刷新列表
-      </Button>
+      <h2>AsyncDemo</h2>
+      <Button onClick={fetchData}>刷新列表</Button>
       <Spin spinning={loading}>
         <Table
           rowKey="id"

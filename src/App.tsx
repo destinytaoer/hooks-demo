@@ -5,6 +5,9 @@ import "./styles.css";
 import { Button } from "antd";
 import { useVisible } from "./hooks/useVisible";
 import { ClosureDemo } from "./demos/ClosureDemo";
+import { PreviousDemo } from "./demos/PreviousDemo";
+import { RefDemo } from "./demos/RefDemo";
+import ReducerDemo from "./demos/reducerDemo";
 
 export default function App() {
   const { visible, toggle } = useVisible(false);
@@ -17,6 +20,9 @@ export default function App() {
       <br />
       {visible && <LifecycleDemo />}
       <ClosureDemo />
+      <PreviousDemo />
+      <ReducerDemo />
+      <RefDemo />
     </div>
   );
 }

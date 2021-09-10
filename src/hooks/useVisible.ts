@@ -1,4 +1,4 @@
-import { useCallback, useState } from "react";
+import { useState, useCallback, useMemo } from "react";
 
 export function useVisible(initValue: boolean = false) {
   const [visible, setVisible] = useState(initValue);
@@ -15,4 +15,14 @@ export function useVisible(initValue: boolean = false) {
   }, []);
 
   return { visible, show, hide, toggle };
+  //=> 另外一种 api 设计
+  // const handlers = useMemo(() => {
+  //   return {
+  //     show: () => setVisible(true),
+  //     hide: () => setVisible(false),
+  //     toggle: () => setVisible((visible) => !visible)
+  //   };
+  // }, []);
+
+  // return [visible, handlers];
 }
